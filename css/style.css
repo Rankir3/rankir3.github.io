@@ -1,11 +1,17 @@
 body a {
-    font-size: 50px;
+    font-size: 40px;
 }
+
+div {
+    border: 1px solid gray;
+    vertical-align: top;
+}
+
 .container {
+    color: bisque;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 50px auto;
     width: 1200px;
     height: 500px;
-    background-color: rgb(255, 225, 127);
+    padding-top: 30px;
 }
