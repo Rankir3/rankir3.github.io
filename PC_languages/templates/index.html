@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
+    <title>Flask App. #0</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="https://powercode.academy/" target="_blank" class="logo">#PowerCode.</a>
+
+        <div class="navbar">
+            <a href="{{ url_for('index') }}" class="active">Main</a>
+            {% for item in data %}
+            <a href="{{ url_for('language_detail', pk=item.id) }}" class="lang-link">
+                {{item.name}}
+            </a>
+            {% endfor %}
+        </div>
+    </header> 
+    
+    <section class="home">
+        <div class="home-content">
+            <h1>{{ title }}</h1>
+            <h3>{{ title_1 }}</h3>
+            <p>A programming language is a system of notation for writing computer programs. 
+                Most programming languages are text-based formal languages, but they may also be graphical. 
+                They are a kind of computer language.</p>
+            <div class="btn-box">
+                <a href="#">History</a>
+                <a href="#">More</a>
+            </div>
+        </div> 
+
+        <div class="home-sci">
+            <a href="https://www.facebook.com/powercodeacademy/" target="_blank"><i class='bx bxl-facebook'></i></a>  
+            <a href="https://www.instagram.com/py_web.ua/" target="_blank"><i class='bx bxl-instagram' ></i></a>  
+            <a href="#"><i class='bx bxl-telegram' ></i></a>  
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+
+        <span class="home-imgHover"></span>
+
+    </section>
+    
+</body>
+</html>
