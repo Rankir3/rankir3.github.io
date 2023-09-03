@@ -1,0 +1,1 @@
+BOT_TOKEN="6407203718:AAEumq1pYprfXpz3AkYl-Hy_NxgvdT1EFUk"
